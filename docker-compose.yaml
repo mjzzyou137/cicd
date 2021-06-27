@@ -1,0 +1,6 @@
+version: "3.3"
+services:
+  cicd-app:
+    image: mjzzyou137/cicd:latest
+    ports:
+      - "5000:5000"
