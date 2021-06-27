@@ -10,7 +10,7 @@ pipeline {
     stage("Test") {
       agent {
           docker {
-            image 'mhart/alpine-node:slim-12'
+            image 'node:12'
             args '-u 0:0 -v /tmp:/root/.cache'
           }
       }
